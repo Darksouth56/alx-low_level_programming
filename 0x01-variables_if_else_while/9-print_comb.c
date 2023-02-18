@@ -21,20 +21,14 @@ int i = 0;
 
 while (i < 10)
 {
-if (i / 10 < i % 10)
+printf("%d", i);
+if (i < 9)
 {
-putchar(i / 10 + '0');
-putchar(i % 10 + '0');
-
-if (i < 89)
-{
-putchar(',');
-putchar(' ');
-}
+printf(", ");
 }
 i++;
 }
+printf("\n");
 
-putchar('\n');
 return (0);
 }
